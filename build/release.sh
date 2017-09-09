@@ -34,7 +34,7 @@ if [[ $REPLY =~ ^[Yy]$ ]]; then
   rm -Rf tmp-releases/v$PACKAGE_VERSION/releases
 
   # append version
-  sed -i '' -e "s|\"]|\", \"$VERSION\"]|g" docs/versions.json
+#  sed -i "" -e "s|\"]|\", \"$VERSION\"]|g" docs/versions.json
 
   # build
   VERSION=$VERSION npm run build
